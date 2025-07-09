@@ -3,12 +3,12 @@ import math
 import random
 
 # Farben und Werte
-farben = ["C", "N", "Z"]
+farben = ["R", "G", "B"]
 werte = [str(i) for i in range(1, 9)]
 alle_karten = [w + f for f in farben for w in werte]
 
 def bingo(aktuelle_karten):
-    farben_karten = {"C": [], "N": [], "Z": []}
+    farben_karten = {"R": [], "G": [], "B": []}
     for k in aktuelle_karten:
         farben_karten[k[1]].append(int(k[0]))
 
